@@ -1,0 +1,39 @@
+<launch>
+
+  <arg name="robot_type" />
+  <arg name="gazebo_world" />
+
+  <arg name="map_resolution"          value="0.01"                if="$(eval gazebo_world == 'fmt_corridor')" />
+  <arg name="map_resolution"          value="0.01"                if="$(eval gazebo_world == 'fmt_home_karto3')" />
+  <arg name="map_resolution"          value="0.01"                if="$(eval gazebo_world == 'fmt_warehouse_karto')" />
+  <arg name="map_resolution"          value="0.05"                if="$(eval gazebo_world == 'fmt_willowgarage')" />
+  <arg name="map_resolution"          value="0.05"                if="$(eval gazebo_world == 'fmt_dirtrack')" />
+  <arg name="map_resolution"          value="0.02"                if="$(eval gazebo_world == 'csal_karto')" />
+  <arg name="map_resolution"          value="0.05"                if="$(eval gazebo_world == 'csal_fmt')" />
+  <arg name="map_directory"           value="$(find cultureid_devel)/maps" />
+
+  <!-- Launch node pipeline_localiser_node -->
+  <node pkg="relief_fmt_global_localisation" type="relief_fmt_global_localisation_node" name="relief_fmt_global_localisation_node" output="screen">
+
+    <!-- General params -->
+    <rosparam command="load" file="$(find relief_fmt_global_localisation)/configuration_files/pipeline_general.yaml" />
+
+    <!-- CSM parameters -->
+    <rosparam command="load" file="$(find relief_fmt_global_localisation)/configuration_files/pipeline_csm.yaml" />
+
+    <!-- ICP parameters -->
+    <rosparam command="load" file="$(find relief_fmt_global_localisation)/configuration_files/pipeline_icp.yaml" />
+
+    <!-- DFT parameters -->
+    <rosparam command="load" file="$(find relief_fmt_global_localisation)/configuration_files/pipeline_dft.yaml" />
+
+
+    <param name="map_png_file"        value="$(arg map_directory)/$(arg gazebo_world)_$(arg map_resolution).png" />
+
+    <param name="scan_topic"          value="scan"                        if="$(eval robot_type == 'turtlebot')" />
+    <param name="odom_topic"          value="odom"                        if="$(eval robot_type == 'turtlebot')" />
+    <param name="laser_z_orientation" value="upwards"                     if="$(eval robot_type == 'turtlebot')" />
+
+  </node>
+
+</launch>

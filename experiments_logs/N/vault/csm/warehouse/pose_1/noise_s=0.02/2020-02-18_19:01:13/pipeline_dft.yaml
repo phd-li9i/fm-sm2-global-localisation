@@ -1,0 +1,29 @@
+# Number of times to perform DFT; each one brings the estimation of the
+# robot's position closer to its true value
+# Setting it to 0 will disable the DFT process execution.
+dft_iterations: 60
+
+# Selection of the ray-cast method: {vanilla|ray_marching|cddt|bresenham}
+dft_map_scan_method: "ray_marching"
+
+# Params regarding debugging
+dft_do_publish_scans: false
+
+# Undersample scans in order to eliminate unwanted noise effects
+dft_scan_undersample_rate: 1
+
+# Minimum number of valid rays in dft diff computation
+dft_min_valid_rays: 0
+
+# Params relating to filling the world scan
+dft_do_fill_map_scan: false
+dft_fill_mean_value: 0.0
+dft_fill_std_value: 0.0
+
+# Params relating to invalidating rays between the world and map scans
+dft_do_invalidate_diff_rays: false
+dft_invalidate_diff_rays_epsilon: 0.01
+
+# Image params (inputs to imreg_dft)
+dft_image_size: 256
+dft_image_format: ".png"

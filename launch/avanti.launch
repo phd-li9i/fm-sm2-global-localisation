@@ -1,0 +1,40 @@
+<launch>
+
+  <arg name="gazebo_world"  default="fmt_dirtrack" />
+
+  <!-- true | false -->
+  <arg name="gazebo_gui"    default="false" />
+
+  <!-- turtlebot | rb1-->
+  <arg name="robot_type"    default="turtlebot" />
+
+  <!-- visualisation is not necessarily necessary -->
+  <arg name="do_viz"        default="false" />
+
+
+  <arg name="num_cameras"   default="1" />
+
+
+  <!-- launch world, robot, etc -->
+  <include file="$(find relief_devel)/launch/avanti_simulation.launch">
+    <arg name="gazebo_world"  value="$(arg gazebo_world)" />
+    <arg name="gazebo_gui"    value="$(arg gazebo_gui)" />
+    <arg name="robot_type"    value="$(arg robot_type)" />
+    <arg name="do_viz"        value="$(arg do_viz)" />
+    <arg name="num_cameras"   value="$(arg num_cameras)" />
+  </include>
+
+
+  <!-- Execute fmt globalisation -->
+  <include file="$(find relief_fmt_global_localisation)/launch/relief_fmt_global_localisation.launch">
+    <arg name="gazebo_world" value="$(arg gazebo_world)" />
+    <arg name="robot_type"   value="$(arg robot_type)" />
+  </include>
+
+
+  <!-- Launch logger -->
+  <include file="$(find relief_fmt_global_localisation)/launch/relief_fmt_global_localisation_logger.launch">
+    <arg name="gazebo_world" value="$(arg gazebo_world)" />
+  </include>
+
+</launch>

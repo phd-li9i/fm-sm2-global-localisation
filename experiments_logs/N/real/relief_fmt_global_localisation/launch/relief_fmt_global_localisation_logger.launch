@@ -1,0 +1,28 @@
+<launch>
+
+  <arg name="gazebo_world" />
+
+  <node name="relief_fmt_global_localisation_logger_node" pkg="relief_fmt_global_localisation" type="relief_fmt_global_localisation_logger_node" output="screen">
+
+    <param name="ground_truth_topic"            value="/ground_truth/state" />
+    <param name="global_pose_topic"             value="/relief_fmt_global_localisation_node/global_pose" />
+    <param name="execution_time_topic"          value="/relief_fmt_global_localisation_node/execution_time" />
+    <param name="map_topic"                     value="/map" />
+    <param name="num_particles_topic"           value="/relief_fmt_global_localisation_node/num_particles" />
+    <param name="image_size_topic"              value="/relief_fmt_global_localisation_node/image_size" />
+    <param name="image_format_topic"            value="/relief_fmt_global_localisation_node/image_format" />
+    <param name="start_signal_service_name"     value="/start_signal" />
+
+    <param name="ground_truth_filename"         value="$(find relief_fmt_global_localisation)/experiments_logs/ground_truth" />
+    <param name="global_pose_filename"          value="$(find relief_fmt_global_localisation)/experiments_logs/global_pose" />
+    <param name="execution_time_filename"       value="$(find relief_fmt_global_localisation)/experiments_logs/execution_time" />
+    <param name="map_filename"                  value="$(find relief_fmt_global_localisation)/experiments_logs/map" />
+    <param name="num_particles_filename"        value="$(find relief_fmt_global_localisation)/experiments_logs/num_particles" />
+    <param name="image_size_filename"           value="$(find relief_fmt_global_localisation)/experiments_logs/image_size" />
+    <param name="image_format_filename"         value="$(find relief_fmt_global_localisation)/experiments_logs/image_format" />
+
+    <param name="map_name"                      value="$(arg gazebo_world)" />
+
+  </node>
+
+</launch>

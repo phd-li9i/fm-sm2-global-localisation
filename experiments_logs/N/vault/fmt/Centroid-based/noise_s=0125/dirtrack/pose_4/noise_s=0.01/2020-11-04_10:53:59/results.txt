@@ -1,0 +1,3 @@
+Mean error:         0.329441 m
+Mean exec time:     0.011327 sec (per particle)
+Number of outliers: 1.03781

@@ -1,0 +1,2 @@
+Mean error:     0.013388 m
+Mean exec time: 0.181340 sec (per particle)

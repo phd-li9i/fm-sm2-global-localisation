@@ -1,0 +1,2 @@
+Mean error:     NaN m
+Mean exec time: NaN sec (per particle)

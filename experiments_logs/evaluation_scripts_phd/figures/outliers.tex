@@ -1,0 +1,466 @@
+% GNUPLOT: LaTeX picture with Postscript
+\begingroup
+  \makeatletter
+  \providecommand\color[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package color not loaded in conjunction with
+      terminal option `colourtext'%
+    }{See the gnuplot documentation for explanation.%
+    }{Either use 'blacktext' in gnuplot or load the package
+      color.sty in LaTeX.}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\includegraphics[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package graphicx or graphics not loaded%
+    }{See the gnuplot documentation for explanation.%
+    }{The gnuplot epslatex terminal needs graphicx.sty or graphics.sty.}%
+    \renewcommand\includegraphics[2][]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \@ifundefined{ifGPcolor}{%
+    \newif\ifGPcolor
+    \GPcolorfalse
+  }{}%
+  \@ifundefined{ifGPblacktext}{%
+    \newif\ifGPblacktext
+    \GPblacktexttrue
+  }{}%
+  % define a \g@addto@macro without @ in the name:
+  \let\gplgaddtomacro\g@addto@macro
+  % define empty templates for all commands taking text:
+  \gdef\gplbacktext{}%
+  \gdef\gplfronttext{}%
+  \makeatother
+  \ifGPblacktext
+    % no textcolor at all
+    \def\colorrgb#1{}%
+    \def\colorgray#1{}%
+  \else
+    % gray or color?
+    \ifGPcolor
+      \def\colorrgb#1{\color[rgb]{#1}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color[rgb]{1,0,0}}%
+      \expandafter\def\csname LT1\endcsname{\color[rgb]{0,1,0}}%
+      \expandafter\def\csname LT2\endcsname{\color[rgb]{0,0,1}}%
+      \expandafter\def\csname LT3\endcsname{\color[rgb]{1,0,1}}%
+      \expandafter\def\csname LT4\endcsname{\color[rgb]{0,1,1}}%
+      \expandafter\def\csname LT5\endcsname{\color[rgb]{1,1,0}}%
+      \expandafter\def\csname LT6\endcsname{\color[rgb]{0,0,0}}%
+      \expandafter\def\csname LT7\endcsname{\color[rgb]{1,0.3,0}}%
+      \expandafter\def\csname LT8\endcsname{\color[rgb]{0.5,0.5,0.5}}%
+    \else
+      % gray
+      \def\colorrgb#1{\color{black}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color{black}}%
+      \expandafter\def\csname LT1\endcsname{\color{black}}%
+      \expandafter\def\csname LT2\endcsname{\color{black}}%
+      \expandafter\def\csname LT3\endcsname{\color{black}}%
+      \expandafter\def\csname LT4\endcsname{\color{black}}%
+      \expandafter\def\csname LT5\endcsname{\color{black}}%
+      \expandafter\def\csname LT6\endcsname{\color{black}}%
+      \expandafter\def\csname LT7\endcsname{\color{black}}%
+      \expandafter\def\csname LT8\endcsname{\color{black}}%
+    \fi
+  \fi
+  \setlength{\unitlength}{0.0500bp}%
+  \begin{picture}(11000.00,12000.00)%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,10003){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,10277){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,10551){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,10825){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,11099){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2162,9783){\makebox(0,0){\strut{}\small $\bm{p}_a^C$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3360,9783){\makebox(0,0){\strut{}\small $\bm{p}_b^C$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4557,9783){\makebox(0,0){\strut{}\small $\bm{p}_c^C$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(265,10551){\rotatebox{90}{\makebox(0,0){\strut{}\small CORRIDOR}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3359,11429){\makebox(0,0){\strut{}PLICP}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,10003){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,10277){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,10551){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,10825){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,11099){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6827,9783){\makebox(0,0){\strut{}\small $\bm{p}_a^C$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8024,9783){\makebox(0,0){\strut{}\small $\bm{p}_b^C$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9221,9783){\makebox(0,0){\strut{}\small $\bm{p}_c^C$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8024,11429){\makebox(0,0){\strut{}PGL-FMIC}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,8266){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,8540){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,8814){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,9088){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,9362){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1726,8046){\makebox(0,0){\strut{}\small $\bm{p}_a^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2053,8046){\makebox(0,0){\strut{}\small $\bm{p}_b^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2380,8046){\makebox(0,0){\strut{}\small $\bm{p}_c^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2706,8046){\makebox(0,0){\strut{}\small $\bm{p}_d^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3033,8046){\makebox(0,0){\strut{}\small $\bm{p}_e^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3360,8046){\makebox(0,0){\strut{}\small $\bm{p}_f^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3686,8046){\makebox(0,0){\strut{}\small $\bm{p}_g^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4013,8046){\makebox(0,0){\strut{}\small $\bm{p}_h^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4339,8046){\makebox(0,0){\strut{}\small $\bm{p}_i^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4666,8046){\makebox(0,0){\strut{}\small $\bm{p}_j^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4993,8046){\makebox(0,0){\strut{}\small $\bm{p}_k^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(265,8814){\rotatebox{90}{\makebox(0,0){\strut{}\small HOME}}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,8266){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,8540){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,8814){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,9088){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,9362){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6391,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6718,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7044,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7371,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7697,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8024,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8351,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8677,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9004,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9330,8046){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9657,8046){\makebox(0,0){\strut{}}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,6530){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,6804){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,7078){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,7352){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,7626){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1820,6310){\makebox(0,0){\strut{}\small $\bm{p}_a^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2333,6310){\makebox(0,0){\strut{}\small $\bm{p}_b^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2846,6310){\makebox(0,0){\strut{}\small $\bm{p}_c^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3360,6310){\makebox(0,0){\strut{}\small $\bm{p}_d^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3873,6310){\makebox(0,0){\strut{}\small $\bm{p}_e^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4386,6310){\makebox(0,0){\strut{}\small $\bm{p}_f^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4899,6310){\makebox(0,0){\strut{}\small $\bm{p}_g^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(265,7078){\rotatebox{90}{\makebox(0,0){\strut{}\small WAREHOUSE}}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,6530){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,6804){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,7078){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,7352){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,7626){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6485,6310){\makebox(0,0){\strut{}\small $\bm{p}_a^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6998,6310){\makebox(0,0){\strut{}\small $\bm{p}_b^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7511,6310){\makebox(0,0){\strut{}\small $\bm{p}_c^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8024,6310){\makebox(0,0){\strut{}\small $\bm{p}_d^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8537,6310){\makebox(0,0){\strut{}\small $\bm{p}_e^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9050,6310){\makebox(0,0){\strut{}\small $\bm{p}_f^W$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9563,6310){\makebox(0,0){\strut{}\small $\bm{p}_g^W$}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,4793){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,5067){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,5341){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,5615){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,5889){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1743,4573){\makebox(0,0){\strut{}\small $\bm{p}_a^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2102,4573){\makebox(0,0){\strut{}\small $\bm{p}_b^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2461,4573){\makebox(0,0){\strut{}\small $\bm{p}_c^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2821,4573){\makebox(0,0){\strut{}\small $\bm{p}_d^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3180,4573){\makebox(0,0){\strut{}\small $\bm{p}_e^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3539,4573){\makebox(0,0){\strut{}\small $\bm{p}_f^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3898,4573){\makebox(0,0){\strut{}\small $\bm{p}_g^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4258,4573){\makebox(0,0){\strut{}\small $\bm{p}_h^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4617,4573){\makebox(0,0){\strut{}\small $\bm{p}_i^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4976,4573){\makebox(0,0){\strut{}\small $\bm{p}_j^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(265,5341){\rotatebox{90}{\makebox(0,0){\strut{}\small WILLOWGARAGE}}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,4793){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,5067){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,5341){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,5615){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,5889){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6408,4573){\makebox(0,0){\strut{}\small $\bm{p}_a^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6767,4573){\makebox(0,0){\strut{}\small $\bm{p}_b^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7126,4573){\makebox(0,0){\strut{}\small $\bm{p}_c^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7485,4573){\makebox(0,0){\strut{}\small $\bm{p}_d^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7844,4573){\makebox(0,0){\strut{}\small $\bm{p}_e^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8204,4573){\makebox(0,0){\strut{}\small $\bm{p}_f^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8563,4573){\makebox(0,0){\strut{}\small $\bm{p}_g^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8922,4573){\makebox(0,0){\strut{}\small $\bm{p}_h^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9281,4573){\makebox(0,0){\strut{}\small $\bm{p}_i^G$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9640,4573){\makebox(0,0){\strut{}\small $\bm{p}_j^G$}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,3056){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,3330){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,3604){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,3878){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,4152){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1820,2836){\makebox(0,0){\strut{}\small $\bm{p}_a^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2333,2836){\makebox(0,0){\strut{}\small $\bm{p}_b^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2846,2836){\makebox(0,0){\strut{}\small $\bm{p}_c^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3360,2836){\makebox(0,0){\strut{}\small $\bm{p}_d^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3873,2836){\makebox(0,0){\strut{}\small $\bm{p}_e^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4386,2836){\makebox(0,0){\strut{}\small $\bm{p}_f^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4899,2836){\makebox(0,0){\strut{}\small $\bm{p}_g^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(265,3604){\rotatebox{90}{\makebox(0,0){\strut{}\small LANDFILL}}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,3056){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,3330){\makebox(0,0)[r]{\strut{}\small $25\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,3604){\makebox(0,0)[r]{\strut{}\small $50\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,3878){\makebox(0,0)[r]{\strut{}\small $75\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,4152){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6485,2836){\makebox(0,0){\strut{}\small $\bm{p}_a^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6998,2836){\makebox(0,0){\strut{}\small $\bm{p}_b^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7511,2836){\makebox(0,0){\strut{}\small $\bm{p}_c^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8024,2836){\makebox(0,0){\strut{}\small $\bm{p}_d^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8537,2836){\makebox(0,0){\strut{}\small $\bm{p}_e^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9050,2836){\makebox(0,0){\strut{}\small $\bm{p}_f^L$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9563,2836){\makebox(0,0){\strut{}\small $\bm{p}_g^L$}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,1320){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,1539){\makebox(0,0)[r]{\strut{}\small $20\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,1758){\makebox(0,0)[r]{\strut{}\small $40\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,1978){\makebox(0,0)[r]{\strut{}\small $60\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,2197){\makebox(0,0)[r]{\strut{}\small $80\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1431,2416){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1726,1100){\makebox(0,0){\strut{}\small $\bm{p}_a^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2053,1100){\makebox(0,0){\strut{}\small $\bm{p}_b^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2380,1100){\makebox(0,0){\strut{}\small $\bm{p}_c^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2706,1100){\makebox(0,0){\strut{}\small $\bm{p}_d^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3033,1100){\makebox(0,0){\strut{}\small $\bm{p}_e^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3360,1100){\makebox(0,0){\strut{}\small $\bm{p}_f^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3686,1100){\makebox(0,0){\strut{}\small $\bm{p}_g^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4013,1100){\makebox(0,0){\strut{}\small $\bm{p}_h^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4339,1100){\makebox(0,0){\strut{}\small $\bm{p}_i^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4666,1100){\makebox(0,0){\strut{}\small $\bm{p}_j^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4993,1100){\makebox(0,0){\strut{}\small $\bm{p}_k^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(265,1868){\rotatebox{90}{\makebox(0,0){\strut{}\small CSAL}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3359,770){\makebox(0,0){\strut{}Σημαίνον στάσης}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,1320){\makebox(0,0)[r]{\strut{}\small $0\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,1539){\makebox(0,0)[r]{\strut{}\small $20\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,1758){\makebox(0,0)[r]{\strut{}\small $40\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,1978){\makebox(0,0)[r]{\strut{}\small $60\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,2197){\makebox(0,0)[r]{\strut{}\small $80\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6096,2416){\makebox(0,0)[r]{\strut{}\small $100\%$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6391,1100){\makebox(0,0){\strut{}\small $\bm{p}_a^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(6718,1100){\makebox(0,0){\strut{}\small $\bm{p}_b^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7044,1100){\makebox(0,0){\strut{}\small $\bm{p}_c^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7371,1100){\makebox(0,0){\strut{}\small $\bm{p}_d^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(7697,1100){\makebox(0,0){\strut{}\small $\bm{p}_e^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8024,1100){\makebox(0,0){\strut{}\small $\bm{p}_f^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8351,1100){\makebox(0,0){\strut{}\small $\bm{p}_g^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(8677,1100){\makebox(0,0){\strut{}\small $\bm{p}_h^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9004,1100){\makebox(0,0){\strut{}\small $\bm{p}_i^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9330,1100){\makebox(0,0){\strut{}\small $\bm{p}_j^A$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(9657,1100){\makebox(0,0){\strut{}\small $\bm{p}_k^A$}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplbacktext
+    \put(0,0){\includegraphics{/home/li9i/catkin_ws/src/relief_fmt_global_localisation/experiments_logs/evaluation_scripts_phd/figures/outliers}}%
+    \gplfronttext
+  \end{picture}%
+\endgroup

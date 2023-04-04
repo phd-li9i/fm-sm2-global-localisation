@@ -1,0 +1,41 @@
+# reference frames
+fixed_frame: "map"
+base_frame: "base_footprint"
+odom_frame: "odom"
+
+# input topics
+scan_topic: "/scan"
+map_topic: "/map"
+odom_topic: "/odom"
+input_pose_topic: "/amcl_pose"
+input_pose_cloud_topic: "/particlecloud"
+start_signal_service_name: "/start_signal"
+global_localisation_service: "/global_localization"
+
+# global pose retrieval method (do_icp AND do_fmt should equal FALSE)
+do_icp: true
+do_fmt: false
+
+# If true feedback is introduced into amcl (comes in two flavors; check
+# `pipeline_feedback_init_pf`). Otherwise amcl runs in open-loop.
+close_loop: true
+
+# If true and close_loop is true, then the output of the pipeline is fed to
+# amcl and its particle filter initialises itself around it. This option is
+# somewhat dangerous since the covariance matrices of amcl may become unitary
+# during this introduction of feedback. If false and
+# close_loop is true, the output of the pipeline is introduced to the particle
+# population. If close_loop is false, then its value is irrelevant.
+feedback_init_pf: true
+
+# The topic where amcl listens for introducing the pipeline's output as a new
+# particle
+feedback_particle_topic: "particle_introduction"
+
+# Covariance for final pose cloud around global pose found
+initial_cov_xx: 0.05
+initial_cov_yy: 0.05
+initial_cov_aa: 0.06854
+
+# Angular discretisation used in cddt 3rd-party ray-caster
+map_scan_theta_disc: 720

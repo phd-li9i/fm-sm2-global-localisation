@@ -1,0 +1,3 @@
+place one rigged particle in the population of N=1, with orientation equal to
+that of the robot. check the rotation correction. does rangelibc need mods? in
+what respect? x? y? θ?

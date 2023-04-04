@@ -1,0 +1,7034 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: /home/li9i/catkin_ws/src/relief_fmt_global_localisation/experiments_logs/evaluation_scripts_phd/figures/outliers.tex
+%%Creator: gnuplot 4.6 patchlevel 6
+%%CreationDate: Sun Mar  6 13:32:34 2022
+%%DocumentFonts: 
+%%BoundingBox: 50 50 600 650
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color false def
+/Blacktext true def
+/Solid false def
+/Dashlength 2 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -73 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 600 50 lineto 600 650 lineto 50 650 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.6 (September 2012)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (/home/li9i/catkin_ws/src/relief_fmt_global_localisation/experiments_logs/evaluation_scripts_phd/figures/outliers.tex)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.6 patchlevel 6)
+  /Author (li9i)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Sun Mar  6 13:32:34 2022)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 0 0 10999 11999 BoxColFill
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 1563 10003 3592 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 10003 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 10277 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 10551 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 10825 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 11099 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 2162 10003 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3360 10003 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4557 10003 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 11099 N
+0 -1096 V
+3593 0 V
+0 1096 V
+-3593 0 V
+Z stroke
+LTb
+0.00 0.00 0.00 C LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 1743 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+1743 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1743 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 2042 10003 N 0 0 V 0 0 V 240 0 V 0 0 V 1 PolyFill
+2042 10003 M
+240 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2042 10003 M
+240 0 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 2341 10003 N 0 0 V 0 0 V 240 0 V 0 0 V 1 PolyFill
+2341 10003 M
+240 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2341 10003 M
+240 0 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 2940 10003 N 0 0 V 0 77 V 240 0 V 0 -77 V 1 PolyFill
+2940 10003 M
+0 77 V
+240 0 V
+0 -77 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2940 10003 M
+0 77 V
+240 0 V
+0 -77 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 3240 10003 N 0 0 V 0 197 V 239 0 V 0 -197 V 1 PolyFill
+3240 10003 M
+0 197 V
+239 0 V
+0 -197 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3240 10003 M
+0 197 V
+239 0 V
+0 -197 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 3539 10003 N 0 0 V 0 384 V 240 0 V 0 -384 V 1 PolyFill
+3539 10003 M
+0 384 V
+240 0 V
+0 -384 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3539 10003 M
+0 384 V
+240 0 V
+0 -384 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 4138 10003 N 0 0 V 0 0 V 240 0 V 0 0 V 1 PolyFill
+4138 10003 M
+240 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4138 10003 M
+240 0 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 4437 10003 N 0 0 V 0 0 V 240 0 V 0 0 V 1 PolyFill
+4437 10003 M
+240 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4437 10003 M
+240 0 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 4737 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+4737 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4737 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 10003 M
+3593 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 6228 10003 3591 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 10003 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 10277 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 10551 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 10825 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 11099 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6827 10003 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8024 10003 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9221 10003 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 11099 N
+0 -1096 V
+3592 0 V
+0 1096 V
+-3592 0 V
+Z stroke
+LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 6408 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+6408 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6408 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 6707 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+6707 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6707 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 7006 10003 N 0 0 V 0 11 V 240 0 V 0 -11 V 1 PolyFill
+7006 10003 M
+0 11 V
+240 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7006 10003 M
+0 11 V
+240 0 V
+0 -11 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 7605 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+7605 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7605 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 7904 10003 N 0 0 V 0 0 V 240 0 V 0 0 V 1 PolyFill
+7904 10003 M
+240 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7904 10003 M
+240 0 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 8204 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+8204 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8204 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 8802 10003 N 0 0 V 0 0 V 240 0 V 0 0 V 1 PolyFill
+8802 10003 M
+240 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8802 10003 M
+240 0 V
+-240 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 9102 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+9102 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9102 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 9401 10003 N 0 0 V 0 0 V 239 0 V 0 0 V 1 PolyFill
+9401 10003 M
+239 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9401 10003 M
+239 0 V
+-239 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 10003 M
+3592 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 1563 8266 3592 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 8266 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 8540 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 8814 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 9088 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 9362 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1726 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2053 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2380 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2706 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3033 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3360 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3686 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4013 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4339 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4666 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4993 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 9362 N
+0 -1096 V
+3593 0 V
+0 1096 V
+-3593 0 V
+Z stroke
+LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 1612 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+1612 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1612 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 1694 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+1694 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1694 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 1775 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+1775 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1775 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 1939 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+1939 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1939 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 2020 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+2020 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2020 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 2102 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+2102 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2102 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 2265 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+2265 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2265 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 2347 8266 N 0 0 V 0 33 V 65 0 V 0 -33 V 1 PolyFill
+2347 8266 M
+0 33 V
+65 0 V
+0 -33 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2347 8266 M
+0 33 V
+65 0 V
+0 -33 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 2429 8266 N 0 0 V 0 537 V 65 0 V 0 -537 V 1 PolyFill
+2429 8266 M
+0 537 V
+65 0 V
+0 -537 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2429 8266 M
+0 537 V
+65 0 V
+0 -537 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 2592 8266 N 0 0 V 0 186 V 65 0 V 0 -186 V 1 PolyFill
+2592 8266 M
+0 186 V
+65 0 V
+0 -186 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2592 8266 M
+0 186 V
+65 0 V
+0 -186 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 2674 8266 N 0 0 V 0 121 V 65 0 V 0 -121 V 1 PolyFill
+2674 8266 M
+0 121 V
+65 0 V
+0 -121 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2674 8266 M
+0 121 V
+65 0 V
+0 -121 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 2755 8266 N 0 0 V 0 99 V 66 0 V 0 -99 V 1 PolyFill
+2755 8266 M
+0 99 V
+66 0 V
+0 -99 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2755 8266 M
+0 99 V
+66 0 V
+0 -99 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 2919 8266 N 0 0 V 0 88 V 65 0 V 0 -88 V 1 PolyFill
+2919 8266 M
+0 88 V
+65 0 V
+0 -88 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2919 8266 M
+0 88 V
+65 0 V
+0 -88 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 3000 8266 N 0 0 V 0 132 V 66 0 V 0 -132 V 1 PolyFill
+3000 8266 M
+0 132 V
+66 0 V
+0 -132 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3000 8266 M
+0 132 V
+66 0 V
+0 -132 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 3082 8266 N 0 0 V 0 110 V 65 0 V 0 -110 V 1 PolyFill
+3082 8266 M
+0 110 V
+65 0 V
+0 -110 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3082 8266 M
+0 110 V
+65 0 V
+0 -110 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 3245 8266 N 0 0 V 0 186 V 66 0 V 0 -186 V 1 PolyFill
+3245 8266 M
+0 186 V
+66 0 V
+0 -186 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3245 8266 M
+0 186 V
+66 0 V
+0 -186 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 3327 8266 N 0 0 V 0 263 V 65 0 V 0 -263 V 1 PolyFill
+3327 8266 M
+0 263 V
+65 0 V
+0 -263 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3327 8266 M
+0 263 V
+65 0 V
+0 -263 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 3408 8266 N 0 0 V 0 99 V 66 0 V 0 -99 V 1 PolyFill
+3408 8266 M
+0 99 V
+66 0 V
+0 -99 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3408 8266 M
+0 99 V
+66 0 V
+0 -99 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 3572 8266 N 0 0 V 0 680 V 65 0 V 0 -680 V 1 PolyFill
+3572 8266 M
+0 680 V
+65 0 V
+0 -680 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3572 8266 M
+0 680 V
+65 0 V
+0 -680 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 3653 8266 N 0 0 V 0 570 V 66 0 V 0 -570 V 1 PolyFill
+3653 8266 M
+0 570 V
+66 0 V
+0 -570 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3653 8266 M
+0 570 V
+66 0 V
+0 -570 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 3735 8266 N 0 0 V 0 175 V 65 0 V 0 -175 V 1 PolyFill
+3735 8266 M
+0 175 V
+65 0 V
+0 -175 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3735 8266 M
+0 175 V
+65 0 V
+0 -175 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+1.00 0.88 0.86 C gsave 3898 8266 N 0 0 V 0 1096 V 66 0 V 0 -1096 V 1 PolyFill
+3898 8266 M
+0 1096 V
+66 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3898 8266 M
+0 1096 V
+66 0 V
+0 -1096 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+1.00 0.57 0.53 C gsave 3980 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+3980 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3980 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.67 0.39 0.36 C gsave 4062 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+4062 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4062 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.61 0.55 0.90 C gsave 4225 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+4225 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4225 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.35 0.33 0.84 C gsave 4307 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+4307 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4307 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.20 0.17 0.40 C gsave 4388 8266 N 0 0 V 0 1096 V 66 0 V 0 -1096 V 1 PolyFill
+4388 8266 M
+0 1096 V
+66 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4388 8266 M
+0 1096 V
+66 0 V
+0 -1096 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.74 0.50 C gsave 4552 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+4552 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4552 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.53 0.52 0.00 C gsave 4633 8266 N 0 0 V 0 1096 V 66 0 V 0 -1096 V 1 PolyFill
+4633 8266 M
+0 1096 V
+66 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4633 8266 M
+0 1096 V
+66 0 V
+0 -1096 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.33 0.32 0.06 C gsave 4715 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+4715 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4715 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.85 0.95 1.00 C gsave 4878 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+4878 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4878 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.78 0.97 C gsave 4960 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+4960 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4960 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.52 0.65 C gsave 5042 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+5042 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 5042 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 8266 M
+3593 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 6228 8266 3591 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 8266 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 8540 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 8814 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 9088 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 9362 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6391 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 6718 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7044 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7371 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7697 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8024 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8351 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8677 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9004 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9330 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9657 8266 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 9362 N
+0 -1096 V
+3592 0 V
+0 1096 V
+-3592 0 V
+Z stroke
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 6277 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+6277 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6277 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 6359 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+6359 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6359 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 6440 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+6440 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6440 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 6604 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+6604 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6604 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 6685 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+6685 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6685 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 6767 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+6767 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6767 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 6930 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+6930 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6930 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 7012 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+7012 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7012 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 7093 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+7093 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7093 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 7257 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+7257 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7257 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 7338 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+7338 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7338 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 7420 8266 N 0 0 V 0 11 V 65 0 V 0 -11 V 1 PolyFill
+7420 8266 M
+0 11 V
+65 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7420 8266 M
+0 11 V
+65 0 V
+0 -11 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 7583 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+7583 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7583 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 7665 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+7665 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7665 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 7746 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+7746 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7746 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 7910 8266 N 0 0 V 0 66 V 65 0 V 0 -66 V 1 PolyFill
+7910 8266 M
+0 66 V
+65 0 V
+0 -66 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7910 8266 M
+0 66 V
+65 0 V
+0 -66 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 7991 8266 N 0 0 V 0 11 V 66 0 V 0 -11 V 1 PolyFill
+7991 8266 M
+0 11 V
+66 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7991 8266 M
+0 11 V
+66 0 V
+0 -11 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 8073 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+8073 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8073 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 8236 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+8236 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8236 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 8318 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+8318 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8318 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 8400 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+8400 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8400 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+1.00 0.88 0.86 C gsave 8563 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+8563 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8563 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+1.00 0.57 0.53 C gsave 8644 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+8644 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8644 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.67 0.39 0.36 C gsave 8726 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+8726 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8726 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.61 0.55 0.90 C gsave 8889 8266 N 0 0 V 0 460 V 66 0 V 0 -460 V 1 PolyFill
+8889 8266 M
+0 460 V
+66 0 V
+0 -460 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8889 8266 M
+0 460 V
+66 0 V
+0 -460 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.35 0.33 0.84 C gsave 8971 8266 N 0 0 V 0 537 V 65 0 V 0 -537 V 1 PolyFill
+8971 8266 M
+0 537 V
+65 0 V
+0 -537 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8971 8266 M
+0 537 V
+65 0 V
+0 -537 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.20 0.17 0.40 C gsave 9053 8266 N 0 0 V 0 658 V 65 0 V 0 -658 V 1 PolyFill
+9053 8266 M
+0 658 V
+65 0 V
+0 -658 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9053 8266 M
+0 658 V
+65 0 V
+0 -658 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.74 0.50 C gsave 9216 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+9216 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9216 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.53 0.52 0.00 C gsave 9298 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+9298 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9298 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.33 0.32 0.06 C gsave 9379 8266 N 0 0 V 0 1096 V 65 0 V 0 -1096 V 1 PolyFill
+9379 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9379 8266 M
+0 1096 V
+65 0 V
+0 -1096 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.85 0.95 1.00 C gsave 9542 8266 N 0 0 V 0 0 V 66 0 V 0 0 V 1 PolyFill
+9542 8266 M
+66 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9542 8266 M
+66 0 V
+-66 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.78 0.97 C gsave 9624 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+9624 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9624 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.52 0.65 C gsave 9706 8266 N 0 0 V 0 0 V 65 0 V 0 0 V 1 PolyFill
+9706 8266 M
+65 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9706 8266 M
+65 0 V
+-65 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 8266 M
+3592 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 1563 6530 3592 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 6530 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 6804 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 7078 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 7352 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 7626 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1820 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2333 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2846 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3360 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3873 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4386 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4899 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 7626 N
+0 -1096 V
+3593 0 V
+0 1096 V
+-3593 0 V
+Z stroke
+LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 1640 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+1640 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1640 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 1768 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+1768 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1768 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 1897 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+1897 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1897 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 2153 6530 N 0 0 V 0 285 V 103 0 V 0 -285 V 1 PolyFill
+2153 6530 M
+0 285 V
+103 0 V
+0 -285 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2153 6530 M
+0 285 V
+103 0 V
+0 -285 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 2282 6530 N 0 0 V 0 625 V 102 0 V 0 -625 V 1 PolyFill
+2282 6530 M
+0 625 V
+102 0 V
+0 -625 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2282 6530 M
+0 625 V
+102 0 V
+0 -625 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 2410 6530 N 0 0 V 0 723 V 103 0 V 0 -723 V 1 PolyFill
+2410 6530 M
+0 723 V
+103 0 V
+0 -723 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2410 6530 M
+0 723 V
+103 0 V
+0 -723 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 2667 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+2667 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2667 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 2795 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+2795 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2795 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 2923 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+2923 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2923 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 3180 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+3180 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3180 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 3308 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+3308 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3308 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 3436 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+3436 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3436 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 3693 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+3693 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3693 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 3821 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+3821 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3821 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 3950 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+3950 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3950 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 4206 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+4206 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4206 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 4335 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+4335 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4335 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 4463 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+4463 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4463 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 4720 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+4720 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4720 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 4848 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+4848 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4848 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 4976 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+4976 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4976 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 6530 M
+3593 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 6228 6530 3591 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 6530 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 6804 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 7078 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 7352 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 7626 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6485 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 6998 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7511 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8024 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8537 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9050 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9563 6530 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 7626 N
+0 -1096 V
+3592 0 V
+0 1096 V
+-3592 0 V
+Z stroke
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 6305 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+6305 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6305 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 6433 6530 N 0 0 V 0 11 V 103 0 V 0 -11 V 1 PolyFill
+6433 6530 M
+0 11 V
+103 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6433 6530 M
+0 11 V
+103 0 V
+0 -11 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 6562 6530 N 0 0 V 0 11 V 102 0 V 0 -11 V 1 PolyFill
+6562 6530 M
+0 11 V
+102 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6562 6530 M
+0 11 V
+102 0 V
+0 -11 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 6818 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+6818 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6818 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 6946 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+6946 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6946 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 7075 6530 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7075 6530 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7075 6530 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 7331 6530 N 0 0 V 0 22 V 103 0 V 0 -22 V 1 PolyFill
+7331 6530 M
+0 22 V
+103 0 V
+0 -22 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7331 6530 M
+0 22 V
+103 0 V
+0 -22 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 7460 6530 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7460 6530 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7460 6530 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 7588 6530 N 0 0 V 0 33 V 102 0 V 0 -33 V 1 PolyFill
+7588 6530 M
+0 33 V
+102 0 V
+0 -33 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7588 6530 M
+0 33 V
+102 0 V
+0 -33 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 7844 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+7844 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7844 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 7973 6530 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7973 6530 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7973 6530 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 8101 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+8101 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8101 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 8358 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+8358 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8358 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 8486 6530 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+8486 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8486 6530 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 8614 6530 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+8614 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8614 6530 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 8871 6530 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+8871 6530 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8871 6530 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 8999 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+8999 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8999 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 9127 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+9127 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9127 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 9384 6530 N 0 0 V 0 11 V 102 0 V 0 -11 V 1 PolyFill
+9384 6530 M
+0 11 V
+102 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9384 6530 M
+0 11 V
+102 0 V
+0 -11 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 9512 6530 N 0 0 V 0 66 V 103 0 V 0 -66 V 1 PolyFill
+9512 6530 M
+0 66 V
+103 0 V
+0 -66 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9512 6530 M
+0 66 V
+103 0 V
+0 -66 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 9640 6530 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+9640 6530 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9640 6530 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 6530 M
+3592 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 1563 4793 3592 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 4793 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 5067 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 5341 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 5615 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 5889 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1743 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2102 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2461 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2821 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3180 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3539 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3898 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4258 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4617 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4976 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 5889 N
+0 -1096 V
+3593 0 V
+0 1096 V
+-3593 0 V
+Z stroke
+LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 1617 4793 N 0 0 V 0 427 V 72 0 V 0 -427 V 1 PolyFill
+1617 4793 M
+0 427 V
+72 0 V
+0 -427 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1617 4793 M
+0 427 V
+72 0 V
+0 -427 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 1707 4793 N 0 0 V 0 351 V 72 0 V 0 -351 V 1 PolyFill
+1707 4793 M
+0 351 V
+72 0 V
+0 -351 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1707 4793 M
+0 351 V
+72 0 V
+0 -351 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 1797 4793 N 0 0 V 0 340 V 71 0 V 0 -340 V 1 PolyFill
+1797 4793 M
+0 340 V
+71 0 V
+0 -340 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1797 4793 M
+0 340 V
+71 0 V
+0 -340 V
+-71 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 1976 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+1976 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1976 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 2066 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+2066 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2066 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 2156 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+2156 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2156 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 2335 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+2335 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2335 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 2425 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+2425 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2425 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 2515 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+2515 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2515 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 2695 4793 N 0 0 V 0 175 V 72 0 V 0 -175 V 1 PolyFill
+2695 4793 M
+0 175 V
+72 0 V
+0 -175 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2695 4793 M
+0 175 V
+72 0 V
+0 -175 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 2785 4793 N 0 0 V 0 384 V 71 0 V 0 -384 V 1 PolyFill
+2785 4793 M
+0 384 V
+71 0 V
+0 -384 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2785 4793 M
+0 384 V
+71 0 V
+0 -384 V
+-71 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 2874 4793 N 0 0 V 0 449 V 72 0 V 0 -449 V 1 PolyFill
+2874 4793 M
+0 449 V
+72 0 V
+0 -449 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2874 4793 M
+0 449 V
+72 0 V
+0 -449 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 3054 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+3054 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3054 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 3144 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+3144 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3144 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 3234 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+3234 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3234 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 3413 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+3413 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3413 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 3503 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+3503 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3503 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 3593 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+3593 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3593 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 3773 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+3773 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3773 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 3863 4793 N 0 0 V 0 1096 V 71 0 V 0 -1096 V 1 PolyFill
+3863 4793 M
+0 1096 V
+71 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3863 4793 M
+0 1096 V
+71 0 V
+0 -1096 V
+-71 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 3952 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+3952 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3952 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+1.00 0.88 0.86 C gsave 4132 4793 N 0 0 V 0 88 V 72 0 V 0 -88 V 1 PolyFill
+4132 4793 M
+0 88 V
+72 0 V
+0 -88 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4132 4793 M
+0 88 V
+72 0 V
+0 -88 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+1.00 0.57 0.53 C gsave 4222 4793 N 0 0 V 0 197 V 72 0 V 0 -197 V 1 PolyFill
+4222 4793 M
+0 197 V
+72 0 V
+0 -197 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4222 4793 M
+0 197 V
+72 0 V
+0 -197 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.67 0.39 0.36 C gsave 4312 4793 N 0 0 V 0 515 V 72 0 V 0 -515 V 1 PolyFill
+4312 4793 M
+0 515 V
+72 0 V
+0 -515 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4312 4793 M
+0 515 V
+72 0 V
+0 -515 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.61 0.55 0.90 C gsave 4491 4793 N 0 0 V 0 877 V 72 0 V 0 -877 V 1 PolyFill
+4491 4793 M
+0 877 V
+72 0 V
+0 -877 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4491 4793 M
+0 877 V
+72 0 V
+0 -877 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.35 0.33 0.84 C gsave 4581 4793 N 0 0 V 0 888 V 72 0 V 0 -888 V 1 PolyFill
+4581 4793 M
+0 888 V
+72 0 V
+0 -888 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4581 4793 M
+0 888 V
+72 0 V
+0 -888 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.20 0.17 0.40 C gsave 4671 4793 N 0 0 V 0 833 V 72 0 V 0 -833 V 1 PolyFill
+4671 4793 M
+0 833 V
+72 0 V
+0 -833 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4671 4793 M
+0 833 V
+72 0 V
+0 -833 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.74 0.50 C gsave 4851 4793 N 0 0 V 0 1096 V 71 0 V 0 -1096 V 1 PolyFill
+4851 4793 M
+0 1096 V
+71 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4851 4793 M
+0 1096 V
+71 0 V
+0 -1096 V
+-71 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.53 0.52 0.00 C gsave 4940 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+4940 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4940 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.33 0.32 0.06 C gsave 5030 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+5030 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 5030 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 4793 M
+3593 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 6228 4793 3591 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 4793 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 5067 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 5341 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 5615 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 5889 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6408 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 6767 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7126 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7485 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7844 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8204 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8563 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8922 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9281 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9640 4793 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 5889 N
+0 -1096 V
+3592 0 V
+0 1096 V
+-3592 0 V
+Z stroke
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 6282 4793 N 0 0 V 0 66 V 72 0 V 0 -66 V 1 PolyFill
+6282 4793 M
+0 66 V
+72 0 V
+0 -66 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6282 4793 M
+0 66 V
+72 0 V
+0 -66 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 6372 4793 N 0 0 V 0 33 V 72 0 V 0 -33 V 1 PolyFill
+6372 4793 M
+0 33 V
+72 0 V
+0 -33 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6372 4793 M
+0 33 V
+72 0 V
+0 -33 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 6461 4793 N 0 0 V 0 329 V 72 0 V 0 -329 V 1 PolyFill
+6461 4793 M
+0 329 V
+72 0 V
+0 -329 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6461 4793 M
+0 329 V
+72 0 V
+0 -329 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 6641 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+6641 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6641 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 6731 4793 N 0 0 V 0 11 V 72 0 V 0 -11 V 1 PolyFill
+6731 4793 M
+0 11 V
+72 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6731 4793 M
+0 11 V
+72 0 V
+0 -11 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 6821 4793 N 0 0 V 0 175 V 72 0 V 0 -175 V 1 PolyFill
+6821 4793 M
+0 175 V
+72 0 V
+0 -175 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6821 4793 M
+0 175 V
+72 0 V
+0 -175 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 7000 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+7000 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7000 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 7090 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+7090 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7090 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 7180 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+7180 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7180 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 7359 4793 N 0 0 V 0 658 V 72 0 V 0 -658 V 1 PolyFill
+7359 4793 M
+0 658 V
+72 0 V
+0 -658 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7359 4793 M
+0 658 V
+72 0 V
+0 -658 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 7449 4793 N 0 0 V 0 767 V 72 0 V 0 -767 V 1 PolyFill
+7449 4793 M
+0 767 V
+72 0 V
+0 -767 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7449 4793 M
+0 767 V
+72 0 V
+0 -767 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 7539 4793 N 0 0 V 0 592 V 72 0 V 0 -592 V 1 PolyFill
+7539 4793 M
+0 592 V
+72 0 V
+0 -592 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7539 4793 M
+0 592 V
+72 0 V
+0 -592 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 7719 4793 N 0 0 V 0 44 V 72 0 V 0 -44 V 1 PolyFill
+7719 4793 M
+0 44 V
+72 0 V
+0 -44 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7719 4793 M
+0 44 V
+72 0 V
+0 -44 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 7808 4793 N 0 0 V 0 44 V 72 0 V 0 -44 V 1 PolyFill
+7808 4793 M
+0 44 V
+72 0 V
+0 -44 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7808 4793 M
+0 44 V
+72 0 V
+0 -44 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 7898 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+7898 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7898 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 8078 4793 N 0 0 V 0 11 V 72 0 V 0 -11 V 1 PolyFill
+8078 4793 M
+0 11 V
+72 0 V
+0 -11 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8078 4793 M
+0 11 V
+72 0 V
+0 -11 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 8168 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8168 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8168 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 8257 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8257 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8257 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 8437 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8437 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8437 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 8527 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8527 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8527 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 8617 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8617 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8617 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+1.00 0.88 0.86 C gsave 8796 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8796 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8796 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+1.00 0.57 0.53 C gsave 8886 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8886 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8886 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.67 0.39 0.36 C gsave 8976 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+8976 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8976 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.61 0.55 0.90 C gsave 9155 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+9155 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9155 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.35 0.33 0.84 C gsave 9245 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+9245 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9245 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.20 0.17 0.40 C gsave 9335 4793 N 0 0 V 0 0 V 72 0 V 0 0 V 1 PolyFill
+9335 4793 M
+72 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9335 4793 M
+72 0 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.74 0.50 C gsave 9515 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+9515 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9515 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.53 0.52 0.00 C gsave 9604 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+9604 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9604 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.33 0.32 0.06 C gsave 9694 4793 N 0 0 V 0 1096 V 72 0 V 0 -1096 V 1 PolyFill
+9694 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9694 4793 M
+0 1096 V
+72 0 V
+0 -1096 V
+-72 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 4793 M
+3592 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 1563 3056 3592 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 3056 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 3330 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 3604 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 3878 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 4152 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1820 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2333 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2846 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3360 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3873 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4386 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4899 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 4152 N
+0 -1096 V
+3593 0 V
+0 1096 V
+-3593 0 V
+Z stroke
+LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 1640 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+1640 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1640 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 1768 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+1768 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1768 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 1897 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+1897 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1897 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 2153 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+2153 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2153 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 2282 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+2282 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2282 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 2410 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+2410 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2410 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 2667 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+2667 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2667 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 2795 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+2795 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2795 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 2923 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+2923 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2923 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 3180 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+3180 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3180 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 3308 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+3308 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3308 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 3436 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+3436 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3436 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 3693 3056 N 0 0 V 0 427 V 103 0 V 0 -427 V 1 PolyFill
+3693 3056 M
+0 427 V
+103 0 V
+0 -427 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3693 3056 M
+0 427 V
+103 0 V
+0 -427 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 3821 3056 N 0 0 V 0 493 V 103 0 V 0 -493 V 1 PolyFill
+3821 3056 M
+0 493 V
+103 0 V
+0 -493 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3821 3056 M
+0 493 V
+103 0 V
+0 -493 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 3950 3056 N 0 0 V 0 427 V 102 0 V 0 -427 V 1 PolyFill
+3950 3056 M
+0 427 V
+102 0 V
+0 -427 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3950 3056 M
+0 427 V
+102 0 V
+0 -427 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 4206 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+4206 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4206 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 4335 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+4335 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4335 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 4463 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+4463 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4463 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 4720 3056 N 0 0 V 0 1096 V 102 0 V 0 -1096 V 1 PolyFill
+4720 3056 M
+0 1096 V
+102 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4720 3056 M
+0 1096 V
+102 0 V
+0 -1096 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 4848 3056 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+4848 3056 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4848 3056 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 4976 3056 N 0 0 V 0 1096 V 103 0 V 0 -1096 V 1 PolyFill
+4976 3056 M
+0 1096 V
+103 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4976 3056 M
+0 1096 V
+103 0 V
+0 -1096 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 3056 M
+3593 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 6228 3056 3591 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 3056 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 3330 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 3604 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 3878 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 4152 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6485 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 6998 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7511 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8024 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8537 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9050 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9563 3056 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 4152 N
+0 -1096 V
+3592 0 V
+0 1096 V
+-3592 0 V
+Z stroke
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+1.00 0.89 0.74 C gsave 6305 3056 N 0 0 V 0 88 V 103 0 V 0 -88 V 1 PolyFill
+6305 3056 M
+0 88 V
+103 0 V
+0 -88 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6305 3056 M
+0 88 V
+103 0 V
+0 -88 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.92 0.67 0.14 C gsave 6433 3056 N 0 0 V 0 197 V 103 0 V 0 -197 V 1 PolyFill
+6433 3056 M
+0 197 V
+103 0 V
+0 -197 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6433 3056 M
+0 197 V
+103 0 V
+0 -197 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.62 0.45 0.12 C gsave 6562 3056 N 0 0 V 0 142 V 102 0 V 0 -142 V 1 PolyFill
+6562 3056 M
+0 142 V
+102 0 V
+0 -142 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6562 3056 M
+0 142 V
+102 0 V
+0 -142 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.42 0.54 C gsave 6818 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+6818 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6818 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 6946 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+6946 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6946 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.32 0.08 0.16 C gsave 7075 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7075 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7075 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.67 0.77 0.99 C gsave 7331 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+7331 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7331 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.55 0.98 C gsave 7460 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7460 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7460 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.13 0.36 0.62 C gsave 7588 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7588 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7588 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.40 0.61 0.34 C gsave 7844 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+7844 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7844 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.43 0.00 C gsave 7973 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+7973 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7973 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.07 0.20 0.05 C gsave 8101 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+8101 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8101 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.76 0.92 0.89 C gsave 8358 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+8358 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8358 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 8486 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+8486 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8486 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.11 0.49 0.45 C gsave 8614 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+8614 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8614 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.93 0.73 0.96 C gsave 8871 3056 N 0 0 V 0 756 V 102 0 V 0 -756 V 1 PolyFill
+8871 3056 M
+0 756 V
+102 0 V
+0 -756 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8871 3056 M
+0 756 V
+102 0 V
+0 -756 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.82 0.39 0.90 C gsave 8999 3056 N 0 0 V 0 712 V 103 0 V 0 -712 V 1 PolyFill
+8999 3056 M
+0 712 V
+103 0 V
+0 -712 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8999 3056 M
+0 712 V
+103 0 V
+0 -712 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.54 0.27 0.59 C gsave 9127 3056 N 0 0 V 0 712 V 103 0 V 0 -712 V 1 PolyFill
+9127 3056 M
+0 712 V
+103 0 V
+0 -712 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9127 3056 M
+0 712 V
+103 0 V
+0 -712 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.84 0.52 0.36 C gsave 9384 3056 N 0 0 V 0 0 V 102 0 V 0 0 V 1 PolyFill
+9384 3056 M
+102 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9384 3056 M
+102 0 V
+-102 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.70 0.27 0.01 C gsave 9512 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+9512 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9512 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.15 0.05 C gsave 9640 3056 N 0 0 V 0 0 V 103 0 V 0 0 V 1 PolyFill
+9640 3056 M
+103 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9640 3056 M
+103 0 V
+-103 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 3056 M
+3592 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 1563 1320 3592 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 1320 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 1539 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 1758 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 1978 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 2197 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1563 2416 M
+88 0 V
+3505 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 1726 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2053 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2380 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 2706 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3033 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3360 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 3686 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4013 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4339 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4666 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 4993 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 1563 2416 N
+0 -1096 V
+3593 0 V
+0 1096 V
+-3593 0 V
+Z stroke
+LTb
+0.00 0.00 0.00 C LTb
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+0.92 0.67 0.14 C gsave 1596 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+1596 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1596 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 1922 1320 N 0 0 V 0 0 V 262 0 V 0 0 V 1 PolyFill
+1922 1320 M
+262 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 1922 1320 M
+262 0 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.00 0.55 0.98 C gsave 2249 1320 N 0 0 V 0 219 V 261 0 V 0 -219 V 1 PolyFill
+2249 1320 M
+0 219 V
+261 0 V
+0 -219 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2249 1320 M
+0 219 V
+261 0 V
+0 -219 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.00 0.43 0.00 C gsave 2576 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+2576 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2576 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 2902 1320 N 0 0 V 0 0 V 262 0 V 0 0 V 1 PolyFill
+2902 1320 M
+262 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 2902 1320 M
+262 0 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.82 0.39 0.90 C gsave 3229 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+3229 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3229 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.70 0.27 0.01 C gsave 3555 1320 N 0 0 V 0 0 V 262 0 V 0 0 V 1 PolyFill
+3555 1320 M
+262 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3555 1320 M
+262 0 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+1.00 0.57 0.53 C gsave 3882 1320 N 0 0 V 0 1096 V 261 0 V 0 -1096 V 1 PolyFill
+3882 1320 M
+0 1096 V
+261 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 3882 1320 M
+0 1096 V
+261 0 V
+0 -1096 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.33 0.84 C gsave 4209 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+4209 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4209 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT0
+0.53 0.52 0.00 C gsave 4535 1320 N 0 0 V 0 1096 V 262 0 V 0 -1096 V 1 PolyFill
+4535 1320 M
+0 1096 V
+262 0 V
+0 -1096 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4535 1320 M
+0 1096 V
+262 0 V
+0 -1096 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.78 0.97 C gsave 4862 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+4862 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 4862 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 1563 1320 M
+3593 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+1.00 1.00 1.00 C 1.000 6228 1320 3591 1095 BoxColFill
+0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 1320 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 1539 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 1758 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 1978 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 2197 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6228 2416 M
+88 0 V
+3504 0 R
+-88 0 V
+stroke
+LTb
+0.00 0.00 0.00 C 6391 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 6718 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7044 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7371 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 7697 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8024 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8351 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 8677 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9004 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9330 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 9657 1320 M
+0 88 V
+0 1008 R
+0 -88 V
+stroke
+LTb
+0.00 0.00 0.00 C 0.500 UL
+LTb
+0.00 0.00 0.00 C 6228 2416 N
+0 -1096 V
+3592 0 V
+0 1096 V
+-3592 0 V
+Z stroke
+1.000 UP
+0.500 UL
+LTb
+0.00 0.00 0.00 C 1.000 UL
+LT0
+0.92 0.67 0.14 C gsave 6261 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+6261 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6261 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.72 0.00 0.35 C gsave 6587 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+6587 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6587 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.00 0.55 0.98 C gsave 6914 1320 N 0 0 V 0 219 V 261 0 V 0 -219 V 1 PolyFill
+6914 1320 M
+0 219 V
+261 0 V
+0 -219 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 6914 1320 M
+0 219 V
+261 0 V
+0 -219 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.00 0.43 0.00 C gsave 7240 1320 N 0 0 V 0 0 V 262 0 V 0 0 V 1 PolyFill
+7240 1320 M
+262 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7240 1320 M
+262 0 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.73 0.68 C gsave 7567 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+7567 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7567 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.82 0.39 0.90 C gsave 7893 1320 N 0 0 V 0 219 V 262 0 V 0 -219 V 1 PolyFill
+7893 1320 M
+0 219 V
+262 0 V
+0 -219 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 7893 1320 M
+0 219 V
+262 0 V
+0 -219 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.70 0.27 0.01 C gsave 8220 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+8220 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8220 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+1.00 0.57 0.53 C gsave 8546 1320 N 0 0 V 0 438 V 262 0 V 0 -438 V 1 PolyFill
+8546 1320 M
+0 438 V
+262 0 V
+0 -438 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8546 1320 M
+0 438 V
+262 0 V
+0 -438 V
+-262 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT6
+0.35 0.33 0.84 C gsave 8873 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+8873 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 8873 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT0
+0.53 0.52 0.00 C gsave 9200 1320 N 0 0 V 0 438 V 261 0 V 0 -438 V 1 PolyFill
+9200 1320 M
+0 438 V
+261 0 V
+0 -438 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9200 1320 M
+0 438 V
+261 0 V
+0 -438 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+stroke
+1.000 UL
+LT3
+0.00 0.78 0.97 C gsave 9526 1320 N 0 0 V 0 0 V 261 0 V 0 0 V 1 PolyFill
+9526 1320 M
+261 0 V
+stroke
+0.500 UL
+LT0
+0.00 0.00 0.00 C 9526 1320 M
+261 0 V
+-261 0 V
+stroke
+LT0
+0.00 0.00 0.00 C 6228 1320 M
+3592 0 V
+1.000 UP
+stroke
+LTb
+0.00 0.00 0.00 C grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Trailer

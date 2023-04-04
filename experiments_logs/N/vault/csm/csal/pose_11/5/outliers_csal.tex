@@ -1,0 +1,162 @@
+% GNUPLOT: LaTeX picture with Postscript
+\begingroup
+  \makeatletter
+  \providecommand\color[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package color not loaded in conjunction with
+      terminal option `colourtext'%
+    }{See the gnuplot documentation for explanation.%
+    }{Either use 'blacktext' in gnuplot or load the package
+      color.sty in LaTeX.}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\includegraphics[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package graphicx or graphics not loaded%
+    }{See the gnuplot documentation for explanation.%
+    }{The gnuplot epslatex terminal needs graphicx.sty or graphics.sty.}%
+    \renewcommand\includegraphics[2][]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \@ifundefined{ifGPcolor}{%
+    \newif\ifGPcolor
+    \GPcolorfalse
+  }{}%
+  \@ifundefined{ifGPblacktext}{%
+    \newif\ifGPblacktext
+    \GPblacktexttrue
+  }{}%
+  % define a \g@addto@macro without @ in the name:
+  \let\gplgaddtomacro\g@addto@macro
+  % define empty templates for all commands taking text:
+  \gdef\gplbacktext{}%
+  \gdef\gplfronttext{}%
+  \makeatother
+  \ifGPblacktext
+    % no textcolor at all
+    \def\colorrgb#1{}%
+    \def\colorgray#1{}%
+  \else
+    % gray or color?
+    \ifGPcolor
+      \def\colorrgb#1{\color[rgb]{#1}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color[rgb]{1,0,0}}%
+      \expandafter\def\csname LT1\endcsname{\color[rgb]{0,1,0}}%
+      \expandafter\def\csname LT2\endcsname{\color[rgb]{0,0,1}}%
+      \expandafter\def\csname LT3\endcsname{\color[rgb]{1,0,1}}%
+      \expandafter\def\csname LT4\endcsname{\color[rgb]{0,1,1}}%
+      \expandafter\def\csname LT5\endcsname{\color[rgb]{1,1,0}}%
+      \expandafter\def\csname LT6\endcsname{\color[rgb]{0,0,0}}%
+      \expandafter\def\csname LT7\endcsname{\color[rgb]{1,0.3,0}}%
+      \expandafter\def\csname LT8\endcsname{\color[rgb]{0.5,0.5,0.5}}%
+    \else
+      % gray
+      \def\colorrgb#1{\color{black}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color{black}}%
+      \expandafter\def\csname LT1\endcsname{\color{black}}%
+      \expandafter\def\csname LT2\endcsname{\color{black}}%
+      \expandafter\def\csname LT3\endcsname{\color{black}}%
+      \expandafter\def\csname LT4\endcsname{\color{black}}%
+      \expandafter\def\csname LT5\endcsname{\color{black}}%
+      \expandafter\def\csname LT6\endcsname{\color{black}}%
+      \expandafter\def\csname LT7\endcsname{\color{black}}%
+      \expandafter\def\csname LT8\endcsname{\color{black}}%
+    \fi
+  \fi
+  \setlength{\unitlength}{0.0500bp}%
+  \begin{picture}(5000.00,3000.00)%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,1822){\makebox(0,0)[r]{\strut{}0}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,2060){\makebox(0,0)[r]{\strut{}0.5}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,2298){\makebox(0,0)[r]{\strut{}1}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,2536){\makebox(0,0)[r]{\strut{}1.5}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,2774){\makebox(0,0)[r]{\strut{}2}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(973,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1296,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1619,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1941,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2264,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2587,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2910,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3233,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3556,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3878,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4201,1602){\makebox(0,0){\strut{}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(-120,2298){\rotatebox{90}{\makebox(0,0){\strut{}PGL-FMIC}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2587,3104){\makebox(0,0){\strut{}Percentage of outliers}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplgaddtomacro\gplbacktext{%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,330){\makebox(0,0)[r]{\strut{}0}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,520){\makebox(0,0)[r]{\strut{}1}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,711){\makebox(0,0)[r]{\strut{}2}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,901){\makebox(0,0)[r]{\strut{}3}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,1092){\makebox(0,0)[r]{\strut{}4}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(518,1282){\makebox(0,0)[r]{\strut{}5}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(973,110){\makebox(0,0){\strut{}$\bm{p}_a^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1296,110){\makebox(0,0){\strut{}$\bm{p}_b^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1619,110){\makebox(0,0){\strut{}$\bm{p}_c^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(1941,110){\makebox(0,0){\strut{}$\bm{p}_d^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2264,110){\makebox(0,0){\strut{}$\bm{p}_e^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2587,110){\makebox(0,0){\strut{}$\bm{p}_f^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2910,110){\makebox(0,0){\strut{}$\bm{p}_g^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3233,110){\makebox(0,0){\strut{}$\bm{p}_h^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3556,110){\makebox(0,0){\strut{}$\bm{p}_i^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(3878,110){\makebox(0,0){\strut{}$\bm{p}_j^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(4201,110){\makebox(0,0){\strut{}$\bm{p}_k^H$}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(144,806){\rotatebox{90}{\makebox(0,0){\strut{}PL-ICP}}}%
+      \colorrgb{0.00,0.00,0.00}%
+      \put(2587,-220){\makebox(0,0){\strut{}Identifier of tested pose in real environment CSAL}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+    }%
+    \gplbacktext
+    \put(0,0){\includegraphics{./outliers_csal}}%
+    \gplfronttext
+  \end{picture}%
+\endgroup

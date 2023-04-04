@@ -1,0 +1,34 @@
+# How many times to perform the ICP process
+icp_iterations: 1
+
+# Improve only the orientation, and not the position
+icp_incorporate_orientation_only: false
+
+# Params regarding debugging
+icp_visual_debug: false
+icp_do_publish_scans: false
+
+# Selection of the ray-cast method: {vanilla|ray_marching|cddt|bresenham}
+icp_map_scan_method: "ray_marching"
+
+# Undersample scans in order to eliminate unwanted noise effects
+icp_scan_undersample_rate: 1
+
+# Params relating to clipping the world scan
+# Laser readings will be clipped above icp_clip_sill
+# Laser readings will be clipped below icp_clip_lintel
+icp_do_clip_scans: false
+icp_clip_sill: 50.0
+icp_clip_lintel: 0.0
+
+# Params relating to filling the world scan
+# In general it is disadvantageous to fill the world scan with values from the
+# map scan, as csm will view the blind regions of the world scan as coincidental
+# with a portion of the map scan, thus dirtying the matching of the two scans.
+icp_do_fill_map_scan: false
+icp_fill_mean_value: 0.0
+icp_fill_std_value: 0.005
+
+# Params relating to invalidating rays between the world and map scans
+icp_do_invalidate_diff_rays: false
+icp_invalidate_diff_rays_epsilon: 0.1
